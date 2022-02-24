@@ -8,7 +8,7 @@ const app = express();
 
 //connect to database
 //mongoose.connect("mongodb://localhost:27017/todolistDB");
-mongoose.connect("mongodb+srv://visconttig:" + process.ENV.ATLAS_PASSWORD + "@cluster0.xokad.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://visconttig:" + process.env.ATLAS_PASSWORD + "@cluster0.xokad.mongodb.net/todolistDB");
 app.set('view engine', 'ejs');
 
 
